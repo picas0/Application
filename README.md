@@ -34,6 +34,5 @@ What it does?
  
  
  
-  (My experience with swing and socket is very limited and I couldn't figure out a way to get around this before time ran out.
-  It was a fun experience nonetheless, especially because I learnt a lot about servers, clients and threads.)
+  (Since ,y experience with java.swing and java.socket is very limited, I couldn't figure out a way to get around the aforementioned problem before the time ran out.It was a fun experience nonetheless, especially because I learnt a lot about servers, clients and threads.)
   
