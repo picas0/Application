@@ -14,7 +14,7 @@ What it does?
   Then client asks wether user is admin or regular and wether he wants to sign up or log in. 
   User can reverse his choices here by clicking on 'back'.
   Then clients aks for username and password. 
-  If username & password are not valid i.e. length<6 or and all chars aren't lowercase alphabets), it shows a message and reprompts for info.
+  If username & password are not valid (i.e. length<6 or and all chars aren't lowercase alphabets), it shows a message and reprompts for info.
   After client has the access (admin/regular), action (signUp/login), username and password - it packs it as a String and sends it to the server.
   If user tries to login, then server verifies his username, password & access.
   If user tries to signup, then server verifies if the uniqueness of his username. If there are no conflicts, it creates a new account and updates the file UserData.txt.
@@ -23,12 +23,11 @@ What it does?
   It creates a Frame where each expense (referred to as 'event' in code) is panel. This allows for independent adding/deletion/editing of events.
   Expenses are put on Scrollpane with horizontal and vertical scrollers.
   If user is regular, then only window pops up and he's authorized to make any changes he'd like.
-  If user is admin, then windows for all users pop up -- I know this is aweful but I had to 
+  If user is admin, then windows for all users pop up -- I know this is awful but I wanted to 
   demonstrate that admin can only make edits to his account while he can read expenses of all accounts. 
   I could have embeded all windows into a super window but at that time I had higher priority tasks at hand.
-  At this point, I hit a roadblock and wasn't able to move forward. Edit Dialog is used to make edits. 
-  On clicking 'Ok', its supposed to send updated information to the server.
-  It sends the right information but server never recieves it.
+  Edit Dialog is used to make edits. On clicking 'Ok', its supposed to send updated information to the server.
+  It sends the right information but server never recieves it.At this point, I hit a roadblock and wasn't able to move forward.
   Mostly likely what's happening is that Edit dialog is called from an actionListener that requires arguments to be either final or static 
   and on casting output stream (that is connected to socket) to final, it doesnt work. It works just before its casted and doesnt work after it.
  
