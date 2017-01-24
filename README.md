@@ -1,8 +1,8 @@
 # Application
 How to run:
-  javac *.java    ### compiles all java files
-  java Server     ### sets up the Server running
-  java Client     ### starts the client
+  [javac *.java]    # compiles all java files #
+  [java Server]     # sets up the Server running #
+  [java Client]     # starts the client #
   
 What it does? 
   Server loads all accounts in file UserData.txt into a HashMap.
@@ -30,10 +30,10 @@ What it does?
   On clicking 'Ok', its supposed to send updated information to the server.
   It sends the right information but server never recieves it.
   Mostly likely what's happening is that Edit dialog is called from an actionListener that requires arguments to be either final or static 
-  and on casting output stream (that is connected to socket) to final, it doesnt work.It works just before its casted and doesnt work after it.
+  and on casting output stream (that is connected to socket) to final, it doesnt work. It works just before its casted and doesnt work after it.
  
  
  
   (My experience with swing and socket is very limited and I couldn't figure out a way to get around this before time ran out.
-  It was fun nonetheless specially because I learnt a lot about servers, clients and threads.)
+  It was a fun experience nonetheless, especially because I learnt a lot about servers, clients and threads.)
   
