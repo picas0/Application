@@ -1,0 +1,8 @@
+akshay khanna admin
+superuser superuser admin
+johnsmith johnsmith user
+username password user
+usernamed password admin
+marktown marktown admin
+usernames passwords user
+usernamep passwordp user
